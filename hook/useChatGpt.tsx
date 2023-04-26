@@ -40,6 +40,7 @@ export const useChatGpt = (message: string) => {
 
   return {
     data,
+    role,
     isLoading,
     isError,
   };
