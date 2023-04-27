@@ -5,9 +5,11 @@ function Chat() {
   const [pendingMessage, setPendingMessage] = useState("");
   const [message, setMessage] = useState("");
   const { data, role, isLoading, isError } = useChatGpt(message);
-  console.log(data);
+
   return (
-    <div>
+    <div className="border-1 flex-col">
+      <div className="border-1 bg-white justify-start my-2">Hello</div>
+      <div className="border-1 bg-white justify-end my-2">Hey</div>
       <input
         type="text"
         className="border-1 focus:outline-none rounded-sm"
